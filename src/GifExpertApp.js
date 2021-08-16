@@ -6,7 +6,7 @@ const GifExpertApp = ()=>{
 
     //const categories = ['One Punch', 'Samurai X', 'Dragon ball'];
 
-    const [ categories, setCategories ] = useState(['Rick and morty'])
+    const [ categories, setCategories ] = useState(['Leones'])
 
 /*     const handleAdd = () => {
         setCategories( [...categories, 'SerieDeNico']);
@@ -20,6 +20,7 @@ const GifExpertApp = ()=>{
 
         <>
             <h2>GifExpertApp</h2>
+            <p>Hola, puedes buscar aquí una palabra y verás gifs que vienen de <a href="https://giphy.com">GIPHY</a></p>
             <AddCategory setCategories={ setCategories }/>
             <hr />
             
