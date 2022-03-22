@@ -7,7 +7,6 @@ export const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState('');//si se deja sin las comillas queda valiendo undefined y da error xD
 
-
     const handleInputChange = ( e ) => {
         setInputValue( e.target.value );
     };
@@ -21,10 +20,6 @@ export const AddCategory = ({ setCategories }) => {
             setCategories( categories => [ inputValue, ...categories ]);
             setInputValue('');
         }
-
-        
-
-
     };
 
 
@@ -36,6 +31,7 @@ export const AddCategory = ({ setCategories }) => {
                     value={ inputValue }
                     onChange={ handleInputChange }
                 />
+                <button type='submit'>Buscar</button>
             </form>
     );
 };

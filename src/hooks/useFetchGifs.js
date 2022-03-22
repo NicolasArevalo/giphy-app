@@ -5,7 +5,6 @@
 import { useEffect, useState } from 'react';
 import { getGifs } from '../helpers/getGifs';
 
-
 export const useFetchGifs = ( category ) => {
     const [state, setState] = useState({
         data: [],
@@ -22,7 +21,7 @@ export const useFetchGifs = ( category ) => {
                 });
             });
 
-    }, [category]);//Solo se ejecuta la primera vez y cada vez que el argumento cambia
+    }, [category]);//Solo se ejecuta la primera vez y cada vez que el argumento cambia  
 
 
     return state; // Qué devuelve?

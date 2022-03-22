@@ -1,17 +1,14 @@
 import React from 'react'
-import { useFetchGifs } from '../hooks/useFetchGifs'
-import { GifGridItem } from './GifGridItem';
+import { useFetchTrends } from '../hooks/useFetchTrends'
+import { GifGridItem } from './GifGridItem'
 
+export const TrendsGrid = () => {
 
+    const { data:images , loading } = useFetchTrends();
 
-export const GifGrid = ({ category }) => {
-
-
-    const { data:images, loading} = useFetchGifs( category );
-    
     return (
         <>
-            <h3>{category}</h3>
+            <h3>Trending 🔥</h3>
 
             { loading && <p className='animate__animated animate__bounce'>Loading</p>} {/* Ampersan(? nos deja evaluar algo solo con respuesta positiva, el ternario (?) positivca y negativa */}
 
