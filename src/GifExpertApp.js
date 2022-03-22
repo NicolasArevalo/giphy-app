@@ -6,13 +6,6 @@ import { TrendsGrid } from "./Components/trendsGrid";
 const GifExpertApp = () => {
   const [categories, setCategories] = useState([]);
 
-  /*     const handleAdd = () => {
-        setCategories( [...categories, 'SerieDeNico']);
-        //setCategories( [ 'SerieDeNico'], ...categories);
-      //Deja las categorias que ya tenía y agrega una nueva, spreed?
-    } // si pongo primero las categories anteriores me sale de últimas y viceversa
- */
-
   return (
     <>
       <div className="banner">
